@@ -2,7 +2,7 @@
 // DRAWING BOT
 //
 // Repository:
-//  None
+//  Github: https://github.com/rahmant3/drawing-bot
 //
 // Description:
 //  View model for the main window of the DrawingBot tool.

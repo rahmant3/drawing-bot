@@ -2,7 +2,7 @@
 // DRAWING BOT
 //
 // Repository:
-//  None
+//  Github: https://github.com/rahmant3/drawing-bot
 //
 // Description:
 //  Code behind for the Main window.

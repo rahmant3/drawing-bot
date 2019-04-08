@@ -2,7 +2,7 @@
 // DRAWING BOT
 //
 // Repository:
-//  None
+//  Github: https://github.com/rahmant3/drawing-bot
 //
 // Description:
 //  Helper class for working with a Serial connection.

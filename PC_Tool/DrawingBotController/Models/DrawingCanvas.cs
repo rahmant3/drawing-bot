@@ -2,7 +2,7 @@
 // DRAWING BOT
 //
 // Repository:
-//  None
+//  Github: https://github.com/rahmant3/drawing-bot
 //
 // Description:
 //  Class used for drawing on a Canvas control.
