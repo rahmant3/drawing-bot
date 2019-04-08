@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingBotController", "DrawingBotController\DrawingBotController.csproj", "{A91B0848-3BEC-4E48-BDAE-2592C2D84410}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A91B0848-3BEC-4E48-BDAE-2592C2D84410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A91B0848-3BEC-4E48-BDAE-2592C2D84410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A91B0848-3BEC-4E48-BDAE-2592C2D84410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A91B0848-3BEC-4E48-BDAE-2592C2D84410}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E3A2375-1B8E-4A7A-80BB-B1CCBE2D7C6B}
+	EndGlobalSection
+EndGlobal

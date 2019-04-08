@@ -1,0 +1,65 @@
+﻿<Window x:Class="DrawingBotController.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DrawingBotController"
+        mc:Ignorable="d"
+        Title="Drawing Bot" MinHeight="480" MinWidth="900" Height="480" Width="900" ResizeMode="CanResizeWithGrip">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0" Height="20">
+            <MenuItem Header="Help">
+                <MenuItem Header="About" Command="{Binding About}"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Grid Grid.Row="1" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" BorderBrush="Black" BorderThickness="2" Width="480" Height="310">
+                    <Canvas Name ="MyCanvas" Background="White" PreviewMouseDown="MyCanvas_PreviewMouseDown" PreviewMouseUp="MyCanvas_PreviewMouseUp"></Canvas>
+                </Border>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Width="100" Margin="10" Content="Clear Canvas" Command="{Binding ClearCanvas}"></Button>
+                    <Button Grid.Column="2" Width="100" Margin="10" Content="Clear Monitor" Command="{Binding ClearMonitor}"></Button>
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <ComboBox Grid.Row="0" Width="250" Margin="10" ItemsSource="{Binding SerialPorts}" SelectedIndex="{Binding SelectedPort}"></ComboBox>
+                <ComboBox Grid.Row="1" Width="250" Margin="10" ItemsSource="{Binding BaudRates}" SelectedItem="{Binding SelectedBaudRate}"></ComboBox>
+                <Button Grid.Row="2" Width="100" Margin="10" Content="Connect" Command="{Binding Connect}"></Button>
+                <Grid Grid.Row="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Margin="10" Height="250" Text="{Binding MonitorText}" TextWrapping="Wrap" IsReadOnly="True" VerticalScrollBarVisibility="Visible" AcceptsReturn="True" AcceptsTab="True"></TextBox>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
